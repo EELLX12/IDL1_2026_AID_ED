@@ -7,7 +7,7 @@ import numpy as np
 
 st.set_page_config(
     page_title="Dashboard Exploratorio",
-    page_icon="📊",
+    page_icon="✨ ✨ ✨ ✨ ",
     layout="wide"
 )
 
@@ -27,12 +27,12 @@ pastel_colors = ["#a3c4f3", "#f7b7a3", "#c3f7a3", "#f3e9a3", "#d7a3f3"]
 # ===============================
 # CARGA DE ARCHIVO
 # ===============================
-st.title("📊 Dashboard de Análisis Exploratorio -  Pedidos Juyo SAC")
+st.title("📊 ✨  Dashboard de Análisis Exploratorio -  Pedidos JSAC✨ ")
 
 archivo = st.file_uploader("Sube tu archivo CSV", type=["csv"])
 
 if archivo is None:
-    st.info("⬆️ Sube un archivo CSV para comenzar")
+    st.info("✨  Sube un archivo CSV para comenzar")
     st.stop()
 
 try:
@@ -94,7 +94,7 @@ with col2:
 
 #  VARIABLES CUALITATIVAS
 # ===============================
-st.header(" 3. Variables cualitativas")
+st.header(" ✨ 3. Variables cualitativas")
 
 if len(vars_categoricas) == 0:
     st.info("No hay variables cualitativas en el dataset")
@@ -197,4 +197,4 @@ if len(vars_numericas) >= 2:
 # FOOTER
 # ===============================
 st.markdown("---")
-st.markdown("✨ **Dashboard generado con Streamlit**")
+st.markdown("✨ *********************** ✨ ")
