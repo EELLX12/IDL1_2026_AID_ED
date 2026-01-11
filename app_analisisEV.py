@@ -27,7 +27,7 @@ pastel_colors = ["#a3c4f3", "#f7b7a3", "#c3f7a3", "#f3e9a3", "#d7a3f3"]
 # ===============================
 # CARGA DE ARCHIVO
 # ===============================
-st.title("📊 ✨  Dashboard de Análisis Exploratorio -  Pedidos JSAC✨ ")
+st.title("📊 ✨  Dashboard de Análisis Estadístico y Exploratorio -  Pedidos JSAC✨ ")
 
 archivo = st.file_uploader("Sube tu archivo CSV", type=["csv"])
 
@@ -142,7 +142,7 @@ else:
     otras_vars = [v for v in vars_numericas if v != var_objetivo]
 
     vars_sel = st.multiselect(
-        "Selecciona entre 1 y 4 variables",
+        "Selecciona entre 1 y 3 variables",
         otras_vars,
         default=otras_vars[:2]
     )
